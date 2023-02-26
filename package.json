@@ -5,12 +5,12 @@
   "main": "nuxt.config.ts",
   "license": "MIT",
   "scripts": {
-    "prepare": "nuxi prepare && nuxi prepare .demo",
-    "build": "nuxt build .demo",
-    "dev": "nuxt dev .demo",
+    "prepare": "nuxi prepare && nuxi prepare",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
     "lint": "eslint .",
-    "generate": "nuxt generate .demo",
-    "preview": "nuxt preview .demo",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
     "prepublishOnly": "pnpm lint",
     "release": "release-it"
   },
@@ -48,6 +48,7 @@
     "nuxt": "^3.2.2",
     "nuxt-icon": "^0.3.2",
     "release-it": "^15.6.0",
+    "tailwindcss": "^3.2.7",
     "typescript": "^4.9.5",
     "vue": "^3.2.47"
   },

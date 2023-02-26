@@ -1,16 +1,5 @@
-import { createResolver } from "@nuxt/kit";
-
-const { resolve: resolveThemeDir } = createResolver(import.meta.url);
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  
-  nitro:{
-    prerender: {
-      crawlLinks: false,
-    },
-    compressPublicAssets: false,
-  },
   pages: true,
   /**
    * Nuxt.js modules
@@ -32,12 +21,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
 
     // Doc: https://github.com/nuxt-modules/icon
-    "nuxt-icon"
-  ],
-
-  components: [
-    { path: resolveThemeDir("./components"), global: true },
-    { path: resolveThemeDir("./components/content"), global: true },
+    "nuxt-icon",
   ],
 
   /**
@@ -77,6 +61,6 @@ export default defineNuxtConfig({
   },
 
   tailwindcss: {
-    cssPath: resolveThemeDir("./assets/css/tailwind.css"),
-  }
+    cssPath: "./assets/css/tailwind.css",
+  },
 });
