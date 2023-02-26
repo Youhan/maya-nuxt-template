@@ -1,0 +1,10 @@
+{
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "files.associations": {
+      "*.css": "postcss"
+    },
+    "editor.formatOnSave": false,
+    "prettier.printWidth": 250
+  }

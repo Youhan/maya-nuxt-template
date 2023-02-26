@@ -1,0 +1,68 @@
+{
+  "name": "maya-nuxt3-photography-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "main": "nuxt.config.ts",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "nuxi prepare && nuxi prepare .demo",
+    "build": "nuxt build .demo",
+    "dev": "nuxt dev .demo",
+    "lint": "eslint .",
+    "generate": "nuxt generate .demo",
+    "preview": "nuxt preview .demo",
+    "prepublishOnly": "pnpm lint",
+    "release": "release-it"
+  },
+  "files": [
+    "app/",
+    "assets/",
+    "components/",
+    "composables/",
+    "layouts/",
+    "utils/",
+    "app.vue",
+    "app.config.ts",
+    "nuxt.config.ts",
+    "tailwind.config.cjs"
+  ],
+  "dependencies": {
+    "@headlessui/vue": "^1.7.10",
+    "@heroicons/vue": "^2.0.16",
+    "@nuxt/content": "^2.4.3",
+    "@nuxthq/studio": "^0.7.5",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/nuxt": "^9.13.0",
+    "photoswipe": "^5.3.5",
+    "rellax": "^1.12.1",
+    "ufo": "^1.1.0"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/image-edge": "1.0.0-27919678.2f5b64b",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/rellax": "^1.7.4",
+    "eslint": "^8.34.0",
+    "nuxt": "^3.2.2",
+    "nuxt-icon": "^0.3.2",
+    "release-it": "^15.6.0",
+    "typescript": "^4.9.5",
+    "vue": "^3.2.47"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "axios": "0.25.0",
+        "vue": "^3.0.0"
+      },
+      "ignoreMissing": [
+        "postcss",
+        "postcss-*",
+        "webpack",
+        "axios"
+      ]
+    }
+  }
+}

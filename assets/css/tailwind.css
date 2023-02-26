@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .text-gradient{
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600;
+  }
+  .maya-prose{
+    @apply prose max-w-none lg:prose-lg;
+    @apply prose-zinc dark:prose-invert;
+    @apply prose-img:rounded-xl;
+    @apply prose-a:decoration-wavy prose-a:decoration-yellow-800/70 prose-a:text-zinc-900 prose-a:dark:decoration-yellow-200/50 prose-a:dark:text-zinc-100 hover:dark:prose-a:text-yellow-200;
+    @apply prose-h1:font-display prose-h1:font-thin prose-h1:mb-24;
+  }
+  .maya-prose-story{
+    @apply prose mx-auto lg:prose-lg;
+    @apply prose-zinc dark:prose-invert;
+    @apply prose-img:rounded-xl;
+    @apply prose-a:decoration-wavy prose-a:decoration-yellow-800/70 prose-a:text-zinc-900 prose-a:dark:decoration-yellow-200/50 prose-a:dark:text-zinc-100 hover:dark:prose-a:text-yellow-200;
+    @apply prose-h1:font-display prose-h1:font-thin prose-h1:mb-24;
+  }
+}
+
+.pt-fade-up-enter-active,
+.pt-fade-up-leave-active {
+  transition: all 0.4s cubic-bezier(0, 0, 0.48, 0.99), opacity 0.2s ease-out;
+}
+
+.pt-fade-up-enter-from {
+  transition: all 0.1s ease-out;
+  opacity: 0;
+  transform: translate3d(0, 30%, 0);
+}
+.pt-fade-up-leave-to {
+  transition: all 0.1s ease-out;
+  opacity: 0;
+  transform: translate3d(0, 10%, 0);
+}
