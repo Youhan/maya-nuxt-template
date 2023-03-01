@@ -1,4 +1,0 @@
-{
-    "buildCommand": "pnpm build",
-    "outputDirectory": "./.demo/dist"
-}
