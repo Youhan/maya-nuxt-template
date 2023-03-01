@@ -1,42 +1,29 @@
-# Nuxt 3 Minimal Starter
+![Maya Nuxt Template](./cover-dark.webp#gh-dark-mode-only)
+![Maya Nuxt Template](./cover-light.webp#gh-light-mode-only)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Maya Nuxt Template
 
-## Setup
+A personal photography portfolio template built with Nuxt.js and Tailwind CSS.
 
-Make sure to install the dependencies:
+👀 [Demo](https://maya-nuxt-template.vercel.app)
 
-```bash
-# yarn
-yarn install
+📖 Docs (WIP)
 
-# npm
-npm install
+## Features
 
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Create pages in Markdown in the `content/` directory
+- Use [Tailwind CSS](https://tailwindcss.com/) for styling
+- Use [Tailwind CSS Typography](https://tailwindcss.com/docs/typography-plugin) for typographic styling
+- Pages:
+  - Home/Landing page
+  - List of blog/story posts
+  - List of galleries
+  - Masonry gallery page
+  - Story/blog post page
+  - Hire me page
+  - More coming soon...
+- Switch between Light & Dark mode 🌗
+- Access 100,000 icons from 100+ icon sets with the `<Icon>` component
+- Create **Vue components** and use them in Markdown
+- Deploy on any Node or Static hosting: GH Pages, Vercel, Netlify, Heroku, etc.
+- Live edit on [Nuxt Studio](https://nuxt.studio) (WIP)
