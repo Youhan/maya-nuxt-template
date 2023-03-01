@@ -5,10 +5,10 @@
   "main": "nuxt.config.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxi dev .demo",
-    "build": "nuxi build .demo",
-    "generate": "nuxi generate .demo",
-    "preview": "nuxi preview .demo",
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
     "lint": "eslint .",
     "prepublishOnly": "pnpm lint",
     "release": "release-it"
