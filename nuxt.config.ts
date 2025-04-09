@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   pages: true,
+
   /**
    * Nuxt.js modules
    */
@@ -63,4 +64,6 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "./assets/css/tailwind.css",
   },
+
+  compatibilityDate: "2025-04-09",
 });
